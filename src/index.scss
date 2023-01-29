@@ -10,9 +10,11 @@
   button {
     @apply bg-yellow_bg text-btn_text font-semibold px-6 py-3 text-xl rounded-lg border-2 border-light_purple;
   }
-
   li {
     @apply hover:text-white cursor-pointer;
+  }
+  img {
+    @apply w-full h-full object-cover;
   }
 }
 
