@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply text-light_black_text bg-white;
+  }
+
+  button {
+    @apply bg-yellow_bg text-btn_text font-semibold px-6 py-3 text-xl rounded-lg border-2 border-light_purple;
+  }
+
+  li {
+    @apply hover:text-white cursor-pointer;
+  }
+}
+
+@layer components {
+  .max_width {
+    @apply max-w-[1300px] mx-auto;
+  }
+  .scroll_bar {
+    ::-webkit-scrollbar {
+      display: none;
+    }
+  }
+}
