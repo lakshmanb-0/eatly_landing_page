@@ -1,10 +1,13 @@
 import Header from "./components/Header";
-import Navbar from "./components/Navbar";
+import Program from "./components/Program";
+import Values from "./components/Values";
 
 function App() {
   return (
     <>
       <Header />
+      <Program />
+      <Values />
     </>
   );
 }

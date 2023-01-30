@@ -4,9 +4,9 @@ import Navbar from "./Navbar";
 
 const Header = () => {
   return (
-    <main className=" bg-purple_bg relative">
+    <main className="bg-gradient-to-r from-[#b48bfb] via-[#8c47f2] to-[#d7806f] relative">
       <Navbar />
-      <header className=" bg-purple_bg max_width px-4 py-12 grid gap-8 md:grid-cols-2 ">
+      <header className="max_width px-4 py-12 grid gap-8 md:grid-cols-2 ">
         <section className="lg:max-w-[27rem] order-2 lg:order-1 py-5 mb-5 lg:mb-0">
           <h1 className="text-6xl lg:text-[5rem] text-white font-bold">
             Changing your <span className="text-yellow_text ">eating </span>
@@ -28,17 +28,15 @@ const Header = () => {
         </section>
 
         {/* img section */}
-        <section className="bg-white h-[30rem] md:h-[25rem] lg:h-[32rem] w-[25rem] md:w-[20rem] lg:w-[24rem] mx-auto order-1 flex rounded-t-full rounded-b-[2000px] z-50 ">
-          <div className="bg-light_purple rounded-t-full rounded-b-[2000px] m-4 flex justify-center w-full relative">
-            <div className="scale-125 md:scale-150 absolute bottom-[2.4rem] md:bottom-[4rem] lg:bottom-[4.8rem] ">
-              <img src="/banner_header.png" alt="Banner_header" />
-            </div>
+        <section className="bg-light_purple shadow-[0_35px_60px_-15px_#c9b8ec] rounded-t-full rounded-b-[2000px] relative h-[30rem] md:h-[25rem] lg:h-[32rem] w-[25rem] md:w-[20rem] lg:w-[24rem] z-50 mx-auto order-1 border-[1.1rem] border-white">
+          <div className="scale-125 md:scale-150 absolute bottom-[2.4rem] md:bottom-[4rem] lg:bottom-[4.8rem] ">
+            <img src="/banner_header.png" alt="Banner_header" />
           </div>
         </section>
       </header>
 
       {/* brand section  */}
-      <section className="w-full bg-purple_text absolute bottom-0 z-0">
+      <section className="w-full bg-gradient-to-r from-white via-[#ede0f2] to-white  absolute bottom-0 z-0">
         <div className="max_width grid lg:grid-cols-3 place-items-center px-4 py-3 ">
           <div className="flex items-center gap-4 h-[3rem] lg:h-[4rem] ">
             <div className="w-[10rem]">
