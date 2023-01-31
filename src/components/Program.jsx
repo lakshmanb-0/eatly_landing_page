@@ -15,7 +15,7 @@ const Program = () => {
 
   const array = [1, 2, 3, 4, 5, 6, 7, 8];
   return (
-    <main className="max_width py-5 px-4">
+    <main className="max_width py-10 px-4">
       <section className="flex items-center justify-between gap-4">
         <h1 className="text-purple_text font-bold space-x-3 text-xl flex items-center">
           <span className=" bg-icon_bg text-icon_text p-2 rounded-lg">
