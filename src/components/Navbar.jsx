@@ -4,8 +4,8 @@ const Navbar = () => {
   return (
     <main className=" w-full ">
       <nav className="max_width px-4 flex justify-between items-center py-3 w-full ">
-        <div>
-          {/* logo */}
+        <div className="flex items-center">
+          <img src="/favicon.ico" alt="Logo_Image" className="h-[2.5rem]" />
           <h1 className="font-bold text-4xl text-yellow_text ml-3">Eatly</h1>
         </div>
         <ul className="lg:flex gap-10 text-xl hidden">

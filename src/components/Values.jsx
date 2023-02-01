@@ -5,6 +5,29 @@ import { AiFillStar, AiFillHeart } from "react-icons/ai";
 import { GiGrowth } from "react-icons/gi";
 
 const Values = () => {
+  const data = [
+    {
+      icon: AiFillHeart,
+      title: "Becomes Healthier",
+      overview: "Immune will stronger if the body is healthier",
+    },
+    {
+      icon: GiGrowth,
+      title: "Increase Energy",
+      overview: "Have enough energy can help carry out a routine",
+    },
+    {
+      icon: BsShieldCheck,
+      title: "Controlling Weight",
+      overview: "Body will feel lighter and will not be easily tired",
+    },
+    {
+      icon: AiFillStar,
+      title: "Becomes Happier",
+      overview: "Living a healthy life also increase self-confidence",
+    },
+  ];
+
   return (
     <main
       className="max_width py-10 px-4 grid md:grid-cols-2 gap-8 place-items-center"
@@ -29,50 +52,20 @@ const Values = () => {
           </p>
         </div>
         <section className="grid grid-cols-2 py-8 gap-8">
-          <div className="relative bg-[#f9f1fe] group hover:bg-white border hover:shadow-[0_15px_100px_-15px_#c9b8ec] cursor-pointer border-white px-6 py-8 rounded-2xl">
-            <span className="absolute left-5 -top-4 bg-icon_bg text-white p-2 rounded-lg text-lg group-hover:bg-yellow_bg ">
-              <AiFillHeart />
-            </span>
-            <h1 className="text-purple_text text-2xl font-bold">
-              Becomes Healthier
-            </h1>
-            <p className="py-2">
-              Immune will stronger if the body is healthier
-            </p>
-          </div>
-          <div className="relative bg-[#f9f1fe] group hover:bg-white border hover:shadow-[0_15px_100px_-15px_#c9b8ec] cursor-pointer border-white px-6 py-8 rounded-2xl">
-            <span className="absolute left-5 -top-4 bg-icon_bg text-white p-2 rounded-lg text-lg group-hover:bg-yellow_bg ">
-              <GiGrowth />
-            </span>
-            <h1 className="text-purple_text text-2xl font-bold">
-              Increase Energy
-            </h1>
-            <p className="py-2">
-              Have enough energy can help carry out a routine
-            </p>
-          </div>
-          <div className="relative bg-[#f9f1fe] group hover:bg-white border hover:shadow-[0_15px_100px_-15px_#c9b8ec] cursor-pointer border-white px-6 py-8 rounded-2xl">
-            <span className="absolute left-5 -top-4 bg-icon_bg text-white p-2 rounded-lg text-lg group-hover:bg-yellow_bg ">
-              <BsShieldCheck />
-            </span>
-            <h1 className="text-purple_text text-2xl font-bold">
-              Controlling Weight
-            </h1>
-            <p className="py-2">
-              Body will feel lighter and will not be easily tired
-            </p>
-          </div>
-          <div className="relative bg-[#f9f1fe] group hover:bg-white border hover:shadow-[0_15px_100px_-15px_#c9b8ec] cursor-pointer border-white px-6 py-8 rounded-2xl">
-            <span className="absolute left-5 -top-4 bg-icon_bg text-white p-2 rounded-lg text-lg group-hover:bg-yellow_bg ">
-              <AiFillStar />
-            </span>
-            <h1 className="text-purple_text text-2xl font-bold">
-              Becomes Happier
-            </h1>
-            <p className="py-2">
-              Living a healthy life also increase self-confidence
-            </p>
-          </div>
+          {data.map((item) => (
+            <div
+              className="relative bg-[#f9f1fe] group hover:bg-white border hover:shadow-[0_15px_100px_-15px_#c9b8ec] cursor-pointer border-white px-6 py-8 rounded-2xl"
+              key={item.icon}
+            >
+              <span className="absolute left-5 -top-4 bg-icon_bg text-white p-2 rounded-lg text-lg group-hover:bg-yellow_bg ">
+                <item.icon />
+              </span>
+              <h1 className="text-purple_text text-2xl font-bold">
+                {item.title}
+              </h1>
+              <p className="py-2">{item.overview} </p>
+            </div>
+          ))}
         </section>
       </section>
     </main>
