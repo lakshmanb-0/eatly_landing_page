@@ -1,3 +1,35 @@
+Author : [Lakshman](lakshmanram2259@gmail.com)
+
+## 🛠️ Built with :
+<img src="https://img.shields.io/badge/react%20-%23333.svg?&style=for-the-badge&logo=react&logoColor=%2361DAFB"/> <img src="https://img.shields.io/badge/tailwindcss%20-%2306B6D4.svg?&style=for-the-badge&logo=tailwindcss&logoColor=white"/>  <img src="https://img.shields.io/badge/vercel%20-%23333.svg?&style=for-the-badge&logo=vercel&logoColor=white"/> <img src="https://img.shields.io/badge/SASS-hotpink.svg?style=for-the-badge&logo=SASS&logoColor=white"/> 
+- **Frontend**: ReactJS, TailwindCSS,
+- **Tools/Package**: React-icons, Swiper.js, Sass
+- **Version Control**: Git
+- **Hosting**: Vercel
+
+[DEMO](https://eatly-landing-page.vercel.app/)
+
+## 📸 Screenshots
+<table>
+    <tr>
+        <td> Laptop full Image</td>
+        <td> Tablet full Image</td>
+        <td> Mobile full Image</td>
+    </tr>
+     <tr>
+         <td>
+            <img src="https://github.com/lakshmanb-0/eatly_landing_page/blob/master/assets/Laptop.png" />
+         </td>
+         <td>
+            <img src="https://github.com/lakshmanb-0/eatly_landing_page/blob/master/assets/Tablet.png" />
+         </td>
+         <td>
+            <img src="https://github.com/lakshmanb-0/eatly_landing_page/blob/master/assets/Mobile.png" />
+         </td>
+      </tr>
+ </table>
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -39,32 +71,3 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
