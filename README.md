@@ -1,5 +1,7 @@
 Author : [Lakshman](lakshmanram2259@gmail.com)
 
+Design : https://www.behance.net/gallery/136232057/Eatly-Landing-Page-design?tracking_source=search_projects%7Clanding+page+web+design
+
 ## 🛠️ Built with :
 <img src="https://img.shields.io/badge/react%20-%23333.svg?&style=for-the-badge&logo=react&logoColor=%2361DAFB"/> <img src="https://img.shields.io/badge/tailwindcss%20-%2306B6D4.svg?&style=for-the-badge&logo=tailwindcss&logoColor=white"/>  <img src="https://img.shields.io/badge/vercel%20-%23333.svg?&style=for-the-badge&logo=vercel&logoColor=white"/> <img src="https://img.shields.io/badge/SASS-hotpink.svg?style=for-the-badge&logo=SASS&logoColor=white"/> 
 - **Frontend**: ReactJS, TailwindCSS,
