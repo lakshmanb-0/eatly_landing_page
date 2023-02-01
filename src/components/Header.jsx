@@ -39,10 +39,10 @@ const Header = () => {
       <section className="w-full bg-gradient-to-r from-white via-[#ede0f2] to-white absolute bottom-0 z-0">
         <div className="max_width grid lg:grid-cols-3 place-items-center px-4 py-3 ">
           <div className="flex items-center gap-4 h-[3rem] lg:h-[4rem] ">
-            <div className="w-[10rem]">
+            <div className="w-[8rem] sm:w-[10rem]">
               <img src="/emerson_logo.png" alt="" />
             </div>
-            <div className="w-[10rem]">
+            <div className="w-[8rem] sm:w-[10rem]">
               <img src="/herbalife_logo.png" alt="" />
             </div>
           </div>
