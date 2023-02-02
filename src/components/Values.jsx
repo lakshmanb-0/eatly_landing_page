@@ -33,13 +33,16 @@ const Values = () => {
       className="max_width py-10 px-4 grid md:grid-cols-2 gap-8 place-items-center"
       id="program"
     >
+      {/* img section  */}
       <section className="img_container">
         <div className="scale-110 sm:scale-[1.5] lg:scale-[1.4] absolute bottom-[0.3rem] sm:bottom-[4.3rem] lg:bottom-[4.1rem] ">
           <img src="/values_img.png" alt="Banner_header" />
         </div>
       </section>
+
+      {/* rightSide section  */}
       <section>
-        <div className="px-4">
+        <div>
           <h1 className="text-purple_text font-bold space-x-3 text-xl flex items-center">
             <span className="bg-icon_bg text-icon_text p-2 rounded-lg">
               <IoDiamondSharp />
@@ -51,10 +54,11 @@ const Values = () => {
             join us to maximize the benefits
           </p>
         </div>
-        <section className="grid grid-cols-2 py-8 gap-8">
+        {/* items section  */}
+        <section className="grid grid-cols-2 py-8 gap-4">
           {data.map((item) => (
             <div
-              className="relative bg-[#f9f1fe] group hover:bg-white border hover:shadow-[0_15px_100px_-15px_#c9b8ec] cursor-pointer border-white px-6 py-8 rounded-2xl"
+              className="relative bg-[#f9f1fe] group hover:bg-white border hover:shadow-[0_15px_100px_-15px_#c9b8ec] cursor-pointer border-white px-4 py-8 rounded-2xl"
               key={item.icon}
             >
               <span className="absolute left-5 -top-4 bg-icon_bg text-white p-2 rounded-lg text-lg group-hover:bg-yellow_bg ">

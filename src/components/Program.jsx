@@ -1,4 +1,5 @@
 import React, { useRef, useState } from "react";
+
 // react icons
 import { FaCrown } from "react-icons/fa";
 import {
@@ -51,16 +52,18 @@ const Program = () => {
       overview: "Good Services available at Eatly",
     },
   ];
+
   return (
     <main className="max_width py-10 px-4">
+      {/* header  */}
       <section className="flex items-center justify-between gap-4">
         <h1 className="text-purple_text font-bold space-x-3 text-xl flex items-center">
-          <span className=" bg-icon_bg text-yellow_text text-2xl p-2 rounded-lg">
+          <span className=" bg-icon_bg text-yellow_text text-lg sm:text-2xl p-2 rounded-lg">
             <FaCrown />
           </span>
-          <span className="text-3xl">Our Best Programs</span>
+          <span className="text-xl sm:text-3xl">Our Best Programs</span>
         </h1>
-        <div className="space-x-3 flex items-center text-2xl lg:text-3xl py-3">
+        <div className="space-x-3 flex items-center text-xl sm:text-3xl py-3">
           <span
             className={`rounded-full p-1 border border-light_purple text-purple_text cursor-pointer ${
               disable === "prev"
@@ -83,6 +86,7 @@ const Program = () => {
           </span>
         </div>
       </section>
+
       {/* programs list  */}
       <Swiper
         modules={[Navigation]}
@@ -110,13 +114,15 @@ const Program = () => {
       >
         {data.map((item) => (
           <SwiperSlide
-            className="group flex flex-col items-center py-8  hover:bg-gradient-to-r from-[#fed577] to-[#ffb41b] cursor-pointer select-none "
+            className="group flex flex-col items-center text-center py-8 px-1 hover:bg-gradient-to-r from-[#fed577] to-[#ffb41b] cursor-pointer select-none"
             key={item.icon}
           >
             <span className="bg-icon_bg text-yellow_text  group-hover:bg-yellow_bg group-hover:text-icon_text p-2 rounded-lg text-3xl border-[3px] border-light_purple ">
               <item.icon />
             </span>
-            <h1 className="font-bold text-2xl py-2 text-white">{item.title}</h1>
+            <h1 className="font-bold text-xl sm:text-2xl py-2 text-white">
+              {item.title}
+            </h1>
             <p className="text-sm text-center max-w-[10rem] group-hover:text-white">
               {item.overview}
             </p>
