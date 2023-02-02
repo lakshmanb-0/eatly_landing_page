@@ -21,6 +21,9 @@
   .max_width {
     @apply max-w-[1250px] mx-auto;
   }
+  .img_container {
+    @apply bg-light_purple shadow-[0_35px_60px_-15px_#c9b8ec] rounded-t-full rounded-b-[2000px] relative h-[22rem] sm:h-[25rem] lg:h-[32rem] w-[18rem] sm:w-[20rem] lg:w-[24rem] z-50 mx-auto border-[1.1rem] border-white;
+  }
   .scroll_bar {
     ::-webkit-scrollbar {
       display: none;

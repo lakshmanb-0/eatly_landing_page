@@ -33,8 +33,8 @@ const Values = () => {
       className="max_width py-10 px-4 grid md:grid-cols-2 gap-8 place-items-center"
       id="program"
     >
-      <section className="bg-light_purple shadow-[0_35px_60px_-15px_#c9b8ec] rounded-t-full rounded-b-[2000px] relative h-[30rem] md:h-[25rem] lg:h-[32rem] w-[25rem] md:w-[20rem] lg:w-[24rem] z-50 mx-auto border-[1.1rem] border-white">
-        <div className="scale-110 md:scale-[1.5] lg:scale-[1.4] absolute bottom-[0.4rem] md:bottom-[4.4rem] lg:bottom-[4.1rem] ">
+      <section className="img_container">
+        <div className="scale-110 sm:scale-[1.5] lg:scale-[1.4] absolute bottom-[0.3rem] sm:bottom-[4.3rem] lg:bottom-[4.1rem] ">
           <img src="/values_img.png" alt="Banner_header" />
         </div>
       </section>

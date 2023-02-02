@@ -2,6 +2,7 @@ import Header from "./components/Header";
 import Program from "./components/Program";
 import Values from "./components/Values";
 import { RiFlagFill } from "react-icons/ri";
+import AboutUs from "./components/AboutUs";
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
           </div>
         </section>
       </main>
+      <AboutUs />
     </>
   );
 }

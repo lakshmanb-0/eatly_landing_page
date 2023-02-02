@@ -28,8 +28,8 @@ const Header = () => {
         </section>
 
         {/* img section */}
-        <section className="bg-light_purple shadow-[0_35px_60px_-15px_#c9b8ec] rounded-t-full rounded-b-[2000px] relative h-[30rem] md:h-[25rem] lg:h-[32rem] w-[25rem] md:w-[20rem] lg:w-[24rem] z-50 mx-auto order-1 border-[1.1rem] border-white">
-          <div className="scale-125 md:scale-150 absolute bottom-[2.4rem] md:bottom-[4rem] lg:bottom-[4.8rem] ">
+        <section className="img_container">
+          <div className="scale-125 sm:scale-150 absolute bottom-[1.6rem] sm:bottom-[3.9rem] lg:bottom-[4.8rem] ">
             <img src="/banner_header.png" alt="Banner_header" />
           </div>
         </section>
