@@ -10,7 +10,16 @@
     @apply bg-yellow_bg text-btn_text font-semibold p-2 text-lg rounded-lg border-[3px] border-light_purple;
   }
   li {
-    @apply hover:text-white cursor-pointer;
+    @apply hover:text-purple_text cursor-pointer;
+  }
+  ::-webkit-scrollbar {
+    @apply w-[0.5rem] h-[0.5rem];
+  }
+  ::-webkit-scrollbar-track {
+    @apply bg-[#f9f1fe] rounded-xl;
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply bg-purple_bg rounded-xl;
   }
   img {
     @apply w-full h-full object-cover;
