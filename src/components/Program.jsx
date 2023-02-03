@@ -18,7 +18,7 @@ import "swiper/css/navigation";
 
 const Program = () => {
   const swiperRef = useRef(null);
-  const [disable, setDisable] = useState("prev");
+  const [disable, setDisable] = useState(true);
 
   const data = [
     {
@@ -49,7 +49,7 @@ const Program = () => {
     {
       icon: RiServiceFill,
       title: "Serving",
-      overview: "Good Services available at Eatly",
+      overview: "Good Services available at Eatly and fresh",
     },
   ];
 
@@ -66,20 +66,14 @@ const Program = () => {
         <div className="space-x-3 flex items-center text-xl sm:text-3xl py-3">
           <span
             className={`rounded-full p-1 border border-light_purple text-purple_text cursor-pointer ${
-              disable === "prev"
-                ? "pointer-events-none text-purple_text/50  "
-                : ""
+              disable ? "pointer-events-none text-purple_text/50  " : ""
             } `}
             onClick={() => swiperRef.current?.slidePrev()}
           >
             <RiArrowLeftSLine />
           </span>
           <span
-            className={`rounded-full p-1 border border-light_purple text-purple_text cursor-pointer ${
-              disable === "nxt"
-                ? "pointer-events-none text-purple_text/50  "
-                : ""
-            } `}
+            className="rounded-full p-1 border border-light_purple text-purple_text cursor-pointer "
             onClick={() => swiperRef.current?.slideNext()}
           >
             <RiArrowRightSLine />
@@ -92,6 +86,7 @@ const Program = () => {
         modules={[Navigation]}
         slidesPerView={2}
         spaceBetween={0}
+        loop={true}
         breakpoints={{
           768: {
             slidesPerView: 3,
@@ -106,9 +101,8 @@ const Program = () => {
           swiperRef.current = swiper;
         }}
         onSlideChange={() => {
-          setDisable("");
-          swiperRef.current?.realIndex === 0 && setDisable("prev");
-          swiperRef.current?.realIndex === 2 && setDisable("nxt");
+          setDisable(false);
+          swiperRef.current?.realIndex === 0 && setDisable(true);
         }}
         className="flex gap-1 bg-purple_bg border-[0.9rem] border-white rounded-[3rem] my-3 shadow-[0_12px_60px_-15px_#c9b8ec]"
       >
@@ -120,7 +114,7 @@ const Program = () => {
             <span className="bg-icon_bg text-yellow_text  group-hover:bg-yellow_bg group-hover:text-icon_text p-2 rounded-lg text-3xl border-[3px] border-light_purple ">
               <item.icon />
             </span>
-            <h1 className="font-bold text-xl sm:text-2xl py-2 text-white">
+            <h1 className="font-bold text-[1rem] sm:text-2xl whitespace-nowrap py-2 text-white">
               {item.title}
             </h1>
             <p className="text-sm text-center max-w-[10rem] group-hover:text-white">

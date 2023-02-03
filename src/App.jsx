@@ -3,6 +3,7 @@ import Program from "./components/Program";
 import Values from "./components/Values";
 import { RiFlagFill } from "react-icons/ri";
 import AboutUs from "./components/AboutUs";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
         </section>
       </main>
       <AboutUs />
+      <Footer />
     </>
   );
 }
