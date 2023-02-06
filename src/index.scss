@@ -15,15 +15,15 @@
   img {
     @apply w-full h-full object-cover;
   }
-  ::-webkit-scrollbar {
-    @apply w-[0.5rem] h-[0.5rem];
-  }
-  ::-webkit-scrollbar-track {
-    @apply bg-[#f9f1fe] rounded-xl;
-  }
-  ::-webkit-scrollbar-thumb {
-    @apply bg-purple_bg rounded-xl;
-  }
+  // ::-webkit-scrollbar {
+  //   @apply w-[0.5rem] h-[0.5rem];
+  // }
+  // ::-webkit-scrollbar-track {
+  //   @apply bg-[#f9f1fe] rounded-xl;
+  // }
+  // ::-webkit-scrollbar-thumb {
+  //   @apply bg-purple_bg rounded-xl;
+  // }
 }
 
 @layer components {
