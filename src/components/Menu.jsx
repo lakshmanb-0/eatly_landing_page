@@ -67,7 +67,7 @@ const Menu = () => {
       {/* menu section  */}
       <article className="md:grid md:grid-cols-2 gap-4 items-center">
         {/* menu navbar  */}
-        <section className="flex md:flex-col gap-4 md:h-[20rem] md:w-[21rem] md:overflow-y-scroll w-full overflow-scroll md:overflow-x-hidden py-3">
+        <section className="flex md:flex-col gap-4 md:h-[20rem] md:w-[21rem] md:overflow-y-scroll w-full overflow-scroll md:overflow-x-hidden py-3 scrollBar">
           {data.map((item) => (
             <div
               key={item.id}
