@@ -25,15 +25,15 @@ const Menu = () => {
       products: [
         {
           image: "/breakfast/image1.png",
-          heading: "Red Onions With Chopped Cabbage",
+          heading: "Breakfast Recipe 1",
         },
         {
           image: "/breakfast/image2.png",
-          heading: "brown Onions With Chopped Cabbage",
+          heading: "Breakfast Recipe 2",
         },
         {
           image: "/breakfast/image3.png",
-          heading: "yellow Onions With Chopped Cabbage",
+          heading: "Breakfast Recipe 3",
         },
       ],
     },
@@ -43,12 +43,16 @@ const Menu = () => {
       title: "Low-Calorie Recipes",
       products: [
         {
-          image: "/banner_header",
-          heading: "Red Onions With Chopped Cabbage",
+          image: "/low_calories/image1.png",
+          heading: "Low-Calorie Recipe 1",
         },
         {
-          image: "/banner_header",
-          heading: "Red Onions With Chopped Cabbage",
+          image: "/low_calories/image2.png",
+          heading: "Low-Calorie Recipe 2",
+        },
+        {
+          image: "/low_calories/image3.png",
+          heading: "Low-Calorie Recipe 3",
         },
       ],
     },
@@ -56,30 +60,73 @@ const Menu = () => {
       id: 3,
       icon: BsFillCalendarCheckFill,
       title: "Holiday Recipes",
-      image: "/banner_header",
-      heading: "Red Onions With Chopped Cabbage",
+      products: [
+        {
+          image: "/holiday/image1.png",
+          heading: "Holiday Recipe 1",
+        },
+        {
+          image: "/holiday/image2.png",
+          heading: "Holiday Recipe 2",
+        },
+      ],
     },
     {
       id: 4,
       icon: IoIosLock,
       title: "Restriction Recipes",
-      image: "/banner_header",
-      heading: "Red Onions With Chopped Cabbage",
+      products: [
+        {
+          image: "/restriction/image1.png",
+          heading: "Restriction Recipe 1",
+        },
+        {
+          image: "/restriction/image2.png",
+          heading: "Restriction Recipe 2",
+        },
+        {
+          image: "/restriction/image3.png",
+          heading: "Restriction Recipe 3",
+        },
+        {
+          image: "/restriction/image4.png",
+          heading: "Restriction Recipe 4",
+        },
+      ],
     },
     {
       id: 5,
       icon: MdFreeBreakfast,
-      title: "Breakfast Recipes",
+      title: "Dinner Recipes",
+      products: [
+        {
+          image: "/dinner/image1.png",
+          heading: "Dinner Recipe 1",
+        },
+        {
+          image: "/dinner/image2.png",
+          heading: "Dinner Recipe 2",
+        },
+        {
+          image: "/dinner/image3.png",
+          heading: "Dinner Recipe 3",
+        },
+        {
+          image: "/dinner/image4.png",
+          heading: "Dinner Recipe 4",
+        },
+      ],
     },
   ];
   const handleData = (event) => {
     data.map((item) => {
       item.title === event && SetDish(event);
+      return dish;
     });
   };
 
   return (
-    <main className="px-4 py-10 max_width">
+    <main className="px-4 py-10 max_width" id="menu">
       {/* header  */}
       <header className="flex justify-between gap-4">
         <div>
@@ -105,7 +152,7 @@ const Menu = () => {
             <div
               key={item.id}
               className={`flex items-center space-x-4 px-4 py-3 bg-[#f9f1fe] group hover:bg-white hover:shadow-[0_15px_100px_-15px_#c9b8ec] rounded-2xl cursor-pointer w-[18rem] ${
-                item.title == dish
+                item.title === dish
                   ? "bg-white shadow-[0_15px_100px_-15px_#c9b8ec]"
                   : ""
               }`}
@@ -113,14 +160,14 @@ const Menu = () => {
             >
               <span
                 className={`border-[3px] bg-purple_bg border-light_purple rounded-xl text-white group-hover:bg-yellow_bg text-sm sm:text-xl p-1 sm:p-2 ${
-                  item.title == dish ? "bg-yellow_bg" : ""
+                  item.title === dish ? "bg-yellow_bg" : ""
                 }`}
               >
                 <item.icon />
               </span>
               <h1
                 className={`text-sm sm:text-xl font-bold whitespace-nowrap text-purple_text group-hover:text-purple_bg ${
-                  item.title == dish ? "text-purple_bg" : ""
+                  item.title === dish ? "text-purple_bg" : ""
                 }`}
               >
                 {item.title}
@@ -139,6 +186,12 @@ const Menu = () => {
               500: {
                 slidesPerView: 2,
               },
+              765: {
+                slidesPerView: 1,
+              },
+              1040: {
+                slidesPerView: 2,
+              },
             }}
             onBeforeInit={(swiper) => {
               swiperRef.current = swiper;
@@ -154,14 +207,20 @@ const Menu = () => {
                 item.title === dish &&
                 item.products?.map((prod) => (
                   <SwiperSlide key={prod.heading}>
-                    <div className="border-[1rem] border-[#f9f1fe] rounded-t-full rounded-b-[100rem] p-4 text-center xl:w-[20rem]">
-                      <div className="bg-light_purple rounded-t-full rounded-b-[100rem] h-[10rem] sm:h-[15rem] xl:h-[15rem]">
-                        <img src={prod.image} alt="image_load" />
+                    <div className="border-[1rem] border-[#f9f1fe] rounded-t-[30rem] rounded-b-[3rem] p-4 text-center max-w-[20rem]">
+                      <div className="bg-light_purple rounded-t-[30rem] rounded-b-[3rem] h-[15rem] sm:h-[15rem] xl:h-[15rem]">
+                        <img
+                          src={prod.image}
+                          alt="image_load"
+                          className="object-contain"
+                        />
                       </div>
                       <h1 className="font-bold text-xl text-purple_text py-3">
                         {prod.heading}
                       </h1>
-                      <button className="py-1">Try Now</button>
+                      <button className="py-0 hover:bg-light_purple hover:text-yellow_text ">
+                        Try Now
+                      </button>
                     </div>
                   </SwiperSlide>
                 ))

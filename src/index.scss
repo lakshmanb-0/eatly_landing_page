@@ -9,6 +9,7 @@
   button {
     @apply bg-yellow_bg text-btn_text font-semibold p-2 text-lg rounded-lg border-[3px] border-light_purple;
   }
+  a,
   li {
     @apply hover:text-purple_text cursor-pointer;
   }

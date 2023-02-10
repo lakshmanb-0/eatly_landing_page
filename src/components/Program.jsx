@@ -54,7 +54,7 @@ const Program = () => {
   ];
 
   return (
-    <main className="max_width py-10 px-4">
+    <main className="max_width py-10 px-4" id="program">
       {/* header  */}
       <section className="flex items-center justify-between gap-4">
         <h1 className="text-purple_text font-bold space-x-3 text-xl flex items-center">

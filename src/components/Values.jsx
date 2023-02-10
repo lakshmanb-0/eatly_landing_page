@@ -31,7 +31,7 @@ const Values = () => {
   return (
     <main
       className="max_width py-10 px-4 grid md:grid-cols-2 gap-8 place-items-center"
-      id="program"
+      id="value"
     >
       {/* img section  */}
       <section className="img_container">

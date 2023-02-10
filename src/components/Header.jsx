@@ -1,5 +1,6 @@
 import React from "react";
 import { BsPlayFill } from "react-icons/bs";
+import { Link } from "react-scroll";
 import Navbar from "./Navbar";
 
 const Header = () => {
@@ -20,7 +21,17 @@ const Header = () => {
             consume every day
           </p>
           <div className="flex items-center gap-8 pb-3">
-            <button className="">Explore Menu</button>
+            <button className="">
+              <Link
+                to="menu"
+                spy={true}
+                smooth={true}
+                offset={-10}
+                duration={500}
+              >
+                Explore Menu
+              </Link>
+            </button>
             <div className="flex items-center gap-2">
               <div className="bg-white text-yellow_text text-2xl rounded-full p-2 border-2 border-light_purple ">
                 <BsPlayFill />

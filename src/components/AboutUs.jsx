@@ -35,7 +35,10 @@ const AboutUs = () => {
   ];
 
   return (
-    <main className="max_width px-4 py-10 md:grid grid-cols-2 items-center">
+    <main
+      className="max_width px-4 py-10 md:grid grid-cols-2 items-center"
+      id="about"
+    >
       {/* image section  */}
       <section className="img_container">
         <div className="scale-110 sm:scale-[1.2] lg:scale-[1.25] absolute bottom-[0.7rem] sm:bottom-[1.9rem] lg:bottom-[3rem] ">
